@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>techarmy</title>+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+ <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><h2>AAROGYA SRI OF TELANGANA STATE</h2></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-Aarogya sri</a> 
+    <a href="#Showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Health Camps</a> 
+    <a href="#Services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Schemes</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Who Is Who</a>                                                                                    
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">List of Hospitals</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hospitals Contacts</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Board of trustees</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Notification</a>                                                                                    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>ASOTS</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>AAROGYA SRI OF TELANGANA STATE</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Images.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About the scheme -->                    
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About the scheme.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Aarogyasri is the flagship scheme of all health initiatives of the State Government with a mission to provide quality healthcare to the poor. The aim of the Government is to achieve "Health for All". The scheme provides financial assistance to BPL families to meet the catastrophic health needs.<p>
+    <p>
+The objective of the scheme is to improve access of BPL families to quality medical care for treatment of identified diseases involving hospitalization, surgeries and therapies through an identified network of health care providers. The entire premium is paid by the Government on behalf of the BPL families.<p>
+<p>
+The scheme provides coverage for the systems like Heart, Lung, Liver, Pancreas, Kidney, Neuro-Surgery, Pediatric Congenital Malformations, Burns, Post -Burn Contracture Surgeries for Functional Improvement, Prostheses (Artificial limbs), Cancer treatment (Surgery, Chemo Therapy, Radio Therapy), Polytrauma (including cases covered under MV Act) and Cochlear Implant Surgery with Auditory-Verbal Therapy for Children below 2 years. All the pre-existing cases of the above mentioned diseases are covered under the scheme.<p>
+<p>
+The diseases specifically excluded from the list are high end diseases such as hip and knee replacement, bone morrow, cardiac and liver transplantations, gamma-knife procedures in neuro surgery, assisted devices for cardiac failures etc; and diseases covered by national programmes viz., TB, HIV/AIDS, Leprosy, Infectious diseases, Malaria, Filaria, Gastroenteritis, Jaundice etc.<p>
+<p>
+All transactions are cashless for covered procedures. A BPL beneficiary can go to any hospital and come out without making any payment to the hospital for the procedures covered under the scheme. The same is the case for diagnostics if eventually the patient does not end up in undergoing the surgery or therapy. Hospitals have to conduct free health camp, there by taking advanced evaluation to the doorstep of patient. All the Primary Health Centers (PHCs) which are the first contact point, Area/District Hospitals and Network Hospitals, are provided with Help Desks manned by AAROGYA MITHRAs to facilitate the illiterate patients. The field staff including Network Aarogyamithras were recruited through the district collectors on outsourcing basis.<p>
+<p>
+Scheme also provides coverage for follow-up services where specifically needed, so as to gain optimum benefit from the Surgery/Therapy and to avoid complications by providing system / disease specific package for one year follow-up for consultation, investigations, drugs etc.,<p>
+    </p>
+  </div>
+
+</body> 
+</html>
+
+
+  <!-- Beneficiaries covered and Financial coverage provided -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Beneficiaries covered and Financial coverage provided.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>
+The beneficiaries of the scheme are the members of Below Poverty Line (BPL) families as enumerated and photographed in BPL Ration Card and available in Civil Supplies Department database. The benefit on family is on floater basis i.e. the total reimbursement of Rs.1.50 lakhs can be availed of individually or collectively by members of the family. An additional sum of Rs 50,000 is provided as buffer to take care of expenses if it exceeds the original sum i.e. Rs 1.50 lakhs per family. Cost for cochlear Implant Surgery with Auditory Verbal Therapy is paid by the Trust up to a maximum of Rs.6.50 lakhs per case.
+    </p>
+  </div>
 
